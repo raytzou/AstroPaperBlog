@@ -68,17 +68,17 @@ ZooL 致力於打造一款結合 CS:GO 現代特性，又不失傳統 CS1.6 經�
   - 根目錄: steamapps\common\Counter-Strike Global Offensive\
   - 完成後你的 CS:GO 目錄大致會如下
 
-```
+```bash
 .\steamapps\common\Counter-Strike Global Offensive
-├── bin
-├── Classic Offensive (CS:CO 內容) ← 新增的資料夾
-├── config
-├── content
-├── csgo (原本 CS:GO 內容)
-├── directx_installer
-├── EmptySteamDepot
-├── game
-├── platform
+├── bin/
+├── Classic Offensive/          # 新增的 CS:CO 內容
+├── config/
+├── content/
+├── csgo/                       # 原本 CS:GO 內容
+├── directx_installer/
+├── EmptySteamDepot/
+├── game/
+├── platform/
 ├── chrome.pak
 ├── csgo.exe
 ├── csgo.signatures
