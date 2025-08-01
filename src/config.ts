@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "",
+  website: "https://raytzou.github.io/",
   author: "Ray Tzou",
   profile: "",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
