@@ -46,7 +46,8 @@ ZooL 致力於打造一款結合 CS:GO 現代特性，又不失傳統 CS1.6 經�
 
 然而，於同月 12 日，Valve 以該模組違反 Steam 用戶協議（Steam Subscriber Agreement）為由，正式要求開發團隊停止該專案，並禁止該模組在其他平台發布。
 
-此舉令許多海外 CS 粉絲不滿。諷刺的是，Counter-Strike 這款遊戲最初也是戰慄時空（Half-Life）的模組遊戲，Valve 的行為令人不勝唏噓。
+此舉令許多海外 CS 粉絲不滿。諷刺的是，Counter-Strike 這款遊戲最初也是戰慄時空\
+（Half-Life）的模組遊戲，Valve 的行為令人不勝唏噓。
 
 ---
 
