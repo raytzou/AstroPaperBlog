@@ -1,7 +1,7 @@
 ---
 author: Ray
-pubDatetime: 2025-08-02
-modDatetime: 2025-08-02
+pubDatetime: 2024-08-02T00:00:00.000Z
+modDatetime: 2024-08-02T00:00:00.000Z
 title: Counter-Strike Classic Offensive 推廣
 slug: promotion-csco
 featured: true
