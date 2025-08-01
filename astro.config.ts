@@ -15,6 +15,7 @@ import { SITE } from "./src/config";
 export default defineConfig({
   base: "/AstroPaperBlog/",
   site: SITE.website,
+  output: "static",
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
