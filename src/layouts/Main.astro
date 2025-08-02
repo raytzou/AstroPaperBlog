@@ -17,7 +17,7 @@ export type Props = StringTitleProp | ArrayTitleProp;
 
 const { props } = Astro;
 
-const backUrl = SITE.showBackButton ? Astro.url.pathname : "/";
+const backUrl = SITE.showBackButton ? `${import.meta.env.BASE_URL}posts` : `${import.meta.env.BASE_URL}`;
 ---
 
 <Breadcrumb />
@@ -47,8 +47,13 @@ const backUrl = SITE.showBackButton ? Astro.url.pathname : "/";
     const mainContent: HTMLElement | null =
       document.querySelector("#main-content");
     const backUrl = mainContent?.dataset?.backurl;
+    
     if (backUrl) {
-      sessionStorage.setItem("backUrl", backUrl);
+      // Don't overwrite existing backUrl from previous page navigation
+      const existingBackUrl = sessionStorage.getItem("backUrl");
+      if (!existingBackUrl) {
+        sessionStorage.setItem("backUrl", backUrl);
+      }
     }
   });
 </script>
