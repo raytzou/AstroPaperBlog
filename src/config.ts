@@ -12,7 +12,7 @@ export const SITE = {
   showArchives: false,
   showBackButton: true, // show back button in post detail
   editPost: {
-    enabled: true,
+    enabled: false,
     text: "Edit page",
     url: "",
   },
