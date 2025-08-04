@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://raytzou.github.io/AstroPaperBlog/",
   author: "Ray Tzou",
   profile: "",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "A place to share my thoughts and ideas.",
   title: "Silent Memo Stack",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
