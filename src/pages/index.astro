@@ -103,7 +103,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     const indexLayout = (document.querySelector("#main-content") as HTMLElement)
       ?.dataset?.layout;
     if (indexLayout) {
-      sessionStorage.setItem("backUrl", import.meta.env.BASE_URL);
+      // Set current page URL as backUrl for navigation from this page
+      sessionStorage.setItem("backUrl", window.location.href);
     }
   });
 </script>
