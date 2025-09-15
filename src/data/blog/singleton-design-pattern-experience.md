@@ -1,7 +1,7 @@
 ---
 author: Ray
-pubDatetime: 2024-08-06T00:00:00.000Z
-modDatetime: 2024-08-06T00:00:00.000Z
+pubDatetime: 2025-08-06T00:00:00.000Z
+modDatetime: 2025-08-06T00:00:00.000Z
 title: 不要使用 Singleton 設計樣式
 slug: singleton-experience
 featured: false
