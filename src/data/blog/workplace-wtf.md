@@ -78,7 +78,7 @@ fatal: refusing to merge unrelated histories
 而且開發、維護的人已經不知道在哪了...\
 在沒人知道這包 source code 的情況下，我最後決定將 `master` 完全對齊 `feature/AFeature`\
 最後活著的分支是 `feature/AFeature` ，它應該是目前唯一可信的版本吧(?)\
-`master` 沒人維護、也沒有可靠歷史，硬要合併只會製造一堆沒意義的 commit 和 conflict\
+`master` 沒人維護、也沒有可靠歷史，硬要合併只會製造一堆沒意義的 commit 和 conflict
 ```bash
 git checkout master
 git reset --hard feature/AFeature
