@@ -1,7 +1,7 @@
 ---
 author: Ray
-pubDatetime: 2025-08-05T00:00:00.000Z
-modDatetime: 2025-08-05T00:00:00.000Z
+pubDatetime: 2025-08-05T00:00:00+08:00
+modDatetime: 2025-08-05T00:00:00+08:00
 title: CS2 更新後伺服器整理 Memo
 slug: server-fix-memo
 featured: false

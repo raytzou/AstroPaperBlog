@@ -1,7 +1,7 @@
 ---
 author: Ray
-pubDatetime: 2025-09-15T00:00:00.000Z
-modDatetime: 2025-09-15T00:00:00.000Z
+pubDatetime: 2025-09-15T00:00:00+08:00
+modDatetime: 2025-09-15T00:00:00+08:00
 title: 工作遇到的鬼故事
 slug: workplace-wtf
 featured: false
