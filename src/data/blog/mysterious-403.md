@@ -33,7 +33,7 @@ description:
 所以名副其實是個沒意義的小黃頁
 
 <img src="https://imgflip.com/s/meme/Sad-Pablo-Escobar.jpg" alt="Narcos meme" style="max-width: 75%; height: auto;">
-<div class="text-center">你這時候倒是給我記錄啊 🔥</div>
+<div class="text-center">我到底該怎麼 Debug？</div>
 
 後來從 Windows Event Viewer 才看到了真正的錯
 ```log
