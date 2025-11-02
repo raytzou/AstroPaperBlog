@@ -166,7 +166,7 @@ namespace MyProject
         }
 
         [ConsoleCommand("css_sound", "sound command")]
-        public void OnMusicCommand(CCSPlayerController client, CommandInfo command)
+        public void OnSoundCommand(CCSPlayerController client, CommandInfo command)
         {
             PlaySoundEvent(client);
         }
