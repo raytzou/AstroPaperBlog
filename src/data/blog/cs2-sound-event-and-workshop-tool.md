@@ -110,7 +110,7 @@ description:
 ### 上傳至 Workshop
 
 1. Asset Browser 右上角 `Tools` => Counter-Strike 2 Workshop Manager
-2. Counter-Strike 2 Workshop Manager 右上角 `New` 開啟佈署視窗
+2. Counter-Strike 2 Workshop Manager 左上角 `New` 開啟佈署視窗
 3. 依序輸入 `Title` `Description`，並選擇一張 Workshop item 的圖片
 ![Workshop Publish window](https://i.meee.com.tw/iihvdY7.png)
 > Visibility 記得選擇 Public
