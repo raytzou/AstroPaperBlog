@@ -197,4 +197,6 @@ namespace MyProject
 對於伺服器資源，不論是 models、maps... 只要丟上網路空間， `server.cfg` 補上 `sv_downloadurl` HTTP 檔案伺服器位址即可\
 另外從中也可以看出 Valve 對於社群管理方針只會限制越來越多\
 之後能不能繼續透過這樣的方式來上傳伺服器資源也是未知數\
-目前的作法其實是騙 Workshop 上傳內容是地圖
+目前的作法其實是騙 Workshop 上傳內容是地圖\
+而且當 Server 更新了 Workshop 的內容時，Client 端有可能不會更新到\
+因此 Client 端必須自己驗證檔案完整性，挺麻煩的
