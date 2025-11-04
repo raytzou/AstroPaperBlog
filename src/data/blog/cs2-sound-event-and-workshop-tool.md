@@ -127,6 +127,8 @@ description:
 
 ### MultiAddonManager
 
+> ⚠️ 這裡不細說明 MultiAddonManager 安裝以及 config 設定
+
 MultiAddonManager 用來將 Workshop 資源 mount 入 server\
 Server 端安裝 MultiAddonManager 後，在 cfg 補上 Workshop ID 即可
 ```log
