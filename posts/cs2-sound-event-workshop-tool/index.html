@@ -400,9 +400,9 @@ About
 <ul>
 <li><code>csgo_music</code> 用來放音樂、UI 等… 不需要 3D 空間的音效，使用 <code>snd_musicvolume</code> console 指令控制音量，抓檔案必須使用 <code>vsnd_files</code></li>
 <li><code>csgo_mega</code> 3D 音效，離聲音 source 越近越大聲，使用 <code>snd_toolvolume</code> console 指令控制音量 <em>(需確認)</em> ，抓檔案必須使用 <code>vsnd_files_track_01</code></li>
-<li><code>pitch</code> 播放速度的 offset，數值越高 <strong>播放速度越快聲音越高</strong> ，反之聲音越低播放越久</li>
 </ul>
 </li>
+<li><code>pitch</code> 播放速度的 offset，數值越高 <strong>播放速度越快聲音越高</strong> ，反之聲音越低播放越久</li>
 </ul>
 <p>撰寫完成將文件另存新檔至 <code>content/csgo_addons/my_server_sounds/soundevents</code> ，檔名 <code>soundevents_addon.vsndevts</code></p>
 <h3 id="編譯-vsndevts">編譯 vsndevts</h3>
@@ -446,6 +446,9 @@ About
 輸入 Change Log 並 Submit 即可</p>
 </blockquote>
 <h3 id="multiaddonmanager">MultiAddonManager</h3>
+<blockquote>
+<p>⚠️ 這裡不細說明 MultiAddonManager 安裝以及 config 設定</p>
+</blockquote>
 <p>MultiAddonManager 用來將 Workshop 資源 mount 入 server<br>
 Server 端安裝 MultiAddonManager 後，在 cfg 補上 Workshop ID 即可</p>
 <pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="log"><code><span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">mm_extra_addons </span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D">"1234567890"</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> // 假設 ID 為 </span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D">"1234567890"</span></span></code></pre>
