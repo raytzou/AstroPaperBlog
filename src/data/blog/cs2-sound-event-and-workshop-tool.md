@@ -86,7 +86,7 @@ description:
 - type 有 `csgo_music` `csgo_mega`
   - `csgo_music` 用來放音樂、UI 等... 不需要 3D 空間的音效，使用 `snd_musicvolume` console 指令控制音量，抓檔案必須使用 `vsnd_files`
   - `csgo_mega` 3D 音效，離聲音 source 越近越大聲，使用 `snd_toolvolume` console 指令控制音量 *(需確認)* ，抓檔案必須使用 `vsnd_files_track_01`
-  - `pitch` 播放速度的 offset，數值越高 **播放速度越快聲音越高** ，反之聲音越低播放越久
+- `pitch` 播放速度的 offset，數值越高 **播放速度越快聲音越高** ，反之聲音越低播放越久
 
 撰寫完成將文件另存新檔至 `content/csgo_addons/my_server_sounds/soundevents` ，檔名 `soundevents_addon.vsndevts`
 
