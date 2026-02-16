@@ -1,0 +1,27 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PostDetails from "@/layouts/PostDetails.astro";
+import getSortedPosts from "@/utils/getSortedPosts";
+import { getPath } from "@/utils/getPath";
+
+export interface Props {
+  post: CollectionEntry<"changelog">;
+}
+
+export async function getStaticPaths() {
+  const changelogs = await getCollection("changelog", ({ data }) => !data.draft);
+  const changelogResult = changelogs.map(changelog => ({
+    params: { slug: getPath(changelog.id, changelog.filePath, false) },
+    props: { post: changelog },
+  }));
+
+  return changelogResult;
+}
+
+const { post } = Astro.props;
+
+const changelogs = await getCollection("changelog");
+const sortedChangelogs = getSortedPosts(changelogs);
+---
+
+<PostDetails post={post} posts={sortedChangelogs} />
