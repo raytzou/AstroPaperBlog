@@ -74,6 +74,11 @@ const isActive = (path: string) => {
             </a>
           </li>
           <li class="col-span-2">
+            <a href={`${import.meta.env.BASE_URL}changelogs`} class:list={{ "active-nav": isActive("/changelogs") }}>
+              Changelogs
+            </a>
+          </li>
+          <li class="col-span-2">
             <a href={`${import.meta.env.BASE_URL}tags`} class:list={{ "active-nav": isActive("/tags") }}>
               Tags
             </a>
