@@ -4,9 +4,10 @@ import type { CollectionEntry } from "astro:content";
 import { getPath } from "@/utils/getPath";
 import Datetime from "./Datetime.astro";
 
-export interface Props extends CollectionEntry<"blog"> {
+export type Props = {
   variant?: "h2" | "h3";
-}
+  [key: string]: any;
+};
 
 const { variant = "h2", data, id, filePath } = Astro.props;
 
