@@ -9,13 +9,13 @@ export async function getStaticPaths() {
     return [];
   }
 
-  const posts = await getCollection("blog").then(p =>
+  const changelogs = await getCollection("changelog").then(p =>
     p.filter(({ data }) => !data.draft && !data.ogImage)
   );
 
-  return posts.map(post => ({
-    params: { slug: getPath(post.id, post.filePath, false) },
-    props: post,
+  return changelogs.map(changelog => ({
+    params: { slug: getPath(changelog.id, changelog.filePath, false) },
+    props: changelog,
   }));
 }
 
@@ -29,13 +29,13 @@ export const GET: APIRoute = async ({ props }) => {
 
   try {
     return new Response(
-      await generateOgImageForPost(props as CollectionEntry<"blog">),
+      await generateOgImageForPost(props as any),
       {
         headers: { "Content-Type": "image/png" },
       }
     );
   } catch (error) {
-    console.error("Failed to generate OG image:", error);
+    console.error("Failed to generate OG image for changelog:", error);
     // Return a 1x1 transparent PNG as fallback
     const transparentPng = Buffer.from(
       "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==",
