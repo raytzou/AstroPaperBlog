@@ -176,13 +176,13 @@ Updated:
 <ul>
 <li>追加：同チームへのフラッシュ影響を無効化</li>
 <li>追加：難易度／プレイヤー人数に応じて、プレイヤーの最大HPおよびアーマー補正を動的に調整</li>
-<li>追加：Boss保護メカニズム（<a href="#%E6%9B%B4%E6%96%B0%E7%B4%B0%E7%AF%80">詳細は下記参照</a>）</li>
+<li>追加：Boss保護メカニズム（<a href="#%E6%9B%B4%E6%96%B0%E8%A9%B3%E7%B4%B0">詳細は下記参照</a>）</li>
 <li>修正：サーバー開始直後にゲーム終了が発生する問題（yuukyuu.mp3）</li>
 <li>修正：!modelsメニューのデフォルトスキン設定が誤っていた問題</li>
 <li>修正：BossのFreezeスキルでプレイヤーの移動が停止しない問題</li>
 <li>修正：FinalBossが稀に正常に生成されない問題（要確認）</li>
-<li>修正：Bossの能力が連続して発動してしまう問題（<a href="#%E6%9B%B4%E6%96%B0%E7%B4%B0%E7%AF%80">詳細は下記参照</a>）</li>
-<li>調整：BossのCursed能力はFinalBossのみ使用可能に変更（<a href="#%E6%9B%B4%E6%96%B0%E7%B4%B0%E7%AF%80">詳細は下記参照</a>）</li>
+<li>修正：Bossの能力が連続して発動してしまう問題（<a href="#%E6%9B%B4%E6%96%B0%E8%A9%B3%E7%B4%B0">詳細は下記参照</a>）</li>
+<li>調整：BossのCursed能力はFinalBossのみ使用可能に変更（<a href="#%E6%9B%B4%E6%96%B0%E8%A9%B3%E7%B4%B0">詳細は下記参照</a>）</li>
 </ul>
 <h3 id="マップ">マップ</h3>
 <ul>
@@ -218,6 +218,29 @@ Updated:
 <li>原本所有 Boss 都能施放 Cursed 能力，現在只有 FinalBoss 能施放</li>
 <li>施放條件從原本的 30% 血量以下才有機會發動，追加判斷條件 Boss 是否為「恐慌狀態」</li>
 <li>恐慌狀態判斷採用 BOT 內建的 PanicTimer，只要當 PainicTimer 啟動即視為 Boss 為恐慌狀態</li>
+</ol>
+<h2 id="更新詳細">更新詳細</h2>
+<h3 id="boss-保護メカニズム">Boss 保護メカニズム</h3>
+<blockquote>
+<p>Boss: <a href="https://www.youtube.com/watch?v=RGNPJ4c8OTc">why you bully me 😭</a></p>
+</blockquote>
+<ol>
+<li>追加：Boss に無敵能力を実装。ほかの能力と同様にランダムで発動します。</li>
+<li>Boss の無敵能力発動後、Boss の中心から外側へ灰色のビーコンを展開し、範囲内のプレイヤーは毎秒 20 HP のダメージを受けます。</li>
+<li>追加：Boss アーマー（MidBoss：1000、FinalBoss：1500）</li>
+<li>Boss のアーマーが 0 になると、3 秒間「Guard Break」状態に入ります。この間は他の能力を発動せず、移動もできません。</li>
+<li>Guard Break 状態終了後、Boss のアーマーは初期値まで回復します。</li>
+</ol>
+<h3 id="boss-能力の連続発動">Boss 能力の連続発動</h3>
+<ol>
+<li>これまで Boss はダメージを受けた際に確率で能力を発動していましたが、今後はダメージを受けるたびに必ず能力を発動するように変更しました。</li>
+<li>クールダウン機構を導入し、Boss が発動できる能力回数に上限を設定しました。</li>
+</ol>
+<h3 id="boss-cursed-能力の調整">Boss Cursed 能力の調整</h3>
+<ol>
+<li>これまで全ての Boss が Cursed 能力を使用可能でしたが、今後は FinalBoss のみ使用可能となります。</li>
+<li>発動条件は「HP が 30％ 未満」のみから、さらに「Boss が『恐慌状態』であること」を追加しました。</li>
+<li>恐慌状態の判定は BOT 内蔵の PanicTimer を使用し、PanicTimer が起動している間は Boss が恐慌状態とみなされます。</li>
 </ol>
 <hr>
 <h2 id="to-do">To-do</h2>
