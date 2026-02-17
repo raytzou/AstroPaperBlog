@@ -1,7 +1,7 @@
 ---
 author: Ray
 pubDatetime: 2026-01-10T00:00:00+08:00
-modDatetime: 2026-01-10T00:00:00+08:00
+modDatetime: 2026-02-17T00:00:00+08:00
 title: 推廣自己的 CS2 Server
 slug: promotion-my-cs2-server
 featured: true
@@ -40,7 +40,7 @@ description:
 4. 承上，如果隨機出生，然後那個地圖設計太爛，\
    BOT 可能會出生在地圖外 (這也是為什麼 volvo 把隨機出生鎖起來不開放的原因) 
 5. 沒有主題，沒有什麼撿硬幣或 VIP 主題，所以玩起來應該很無聊 
-6. BOSS 會連續施放能力 (下次再修，下此啦，哪次不是下次) 
+6. ~~BOSS 會連續施放能力 (下次再修，下此啦，哪次不是下次)~~
 7. SaySound 完全使用 Kurome 大的 (Kurome ari 😭) 
 8. 不知道，想到再說，反正就是很爛很陽春的 saba
 
@@ -77,8 +77,8 @@ connect cynicat.myddns.me:27987; password quitjob™
 1. 為什麼連線讀取後又回到遊戲主畫面？
    - 原因：MultiAddonManager 推送需要的 Workshop item 失敗，導致缺少需要的資源而無法進入 Server
    - 解法：訂閱 [我的 Workshop Item](https://steamcommunity.com/sharedfiles/filedetails/?id=3633304771) 即可，如果還是不行，可以再試試訂閱 [Kurome 大的 Workshop Item](https://steamcommunity.com/sharedfiles/filedetails/?id=3101610901)
-2. Boss 出生是不是有時候會失敗？
-   - 沒錯。
+2. 為什麼有時候玩一玩突然遊戲整個沒聲音
+   - 造成原因不明，如果突然聽不到任何聲音，重進 Server 即可修復
 3. C4 timer 壞了？
    - 有時候。
 
@@ -105,11 +105,11 @@ connect cynicat.myddns.me:27987; password quitjob™
 **Boss 技能**
 - 火焰瓶攻擊：對每位活著玩家召喚火焰瓶
 - 手榴彈攻擊：對每位活著玩家召喚手榴彈
+- ~~閃光彈攻擊：對每位活著玩家召喚閃光彈~~
+  - 目前已知召喚失敗，修復中
 - 冰封：讓每位玩家移動減速 2 秒
-  - ~~原本設計是想讓玩家凍住 2 秒，但不知為何只能做到緩速~~
 - 毒氣攻擊：挑任意 1/3 活著玩家召喚有毒煙霧彈，在煙霧彈內每秒扣 5 HP
 - 詛咒攻擊：Boss HP 低於 1/3 後有機率使用詛咒攻擊，會導致玩家每秒損傷 2 HP，此外會有被隨機打飛的效果
-  - ~~後來發現 Boss 連續施放技能 bug 再不修，這招會變太強~~
 
 **常用指令**
 - `!help`：顯示其他指令
